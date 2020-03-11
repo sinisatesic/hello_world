@@ -1,0 +1,329 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: #fa6161;
+    animation: backgroundy 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundy {
+    0%{
+        background: #fa6161;
+    }
+    25%{
+        background: #cf3636;
+    }
+    50%{
+        background: #ba1616;
+    }
+    75%{
+        background: #a13030;
+    }
+    100%{
+        background: #fa6161;
+    }
+}
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    font-weight: bold;
+    color: maroon;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+}
+
+
+.greek {
+    list-style-type: lower-greek;
+}
+
+li, dl, p, h2, a, span, blockquote {
+    margin-left: 10%;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 15px;
+    overflow: hidden;
+    background: linear-gradient(30deg, #FF5837, #B4290E, #F92904);
+    background-repeat: repeat;
+    background-size: 75%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffbc37;
+    text-shadow: 5px 5px;
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+p {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #BB2406, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 155, 0);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 35px;
+    overflow:hidden;
+}
+
+
+button:hover {
+    animation: bounce .75s;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+.red {
+    background: #dbc835;
+    animation: rotate 11s infinite linear;
+}
+
+.sliding-background {
+    background: url(https://res.cloudinary.com/teepublic/image/private/s--552zAhj0--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1531405687/production/designs/2883272_0.jpg);
+    height: 620px;
+    width: 625px;
+    border-radius: 50%;
+    animation: slide 5s;
+    animation-iteration-count: infinite;
+    margin-left: -31%;
+    background-blend-mode: darken;
+}
+
+#googly {
+    position: relative;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+
+
+@keyframes slide {
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    50%{
+        transform: translate3d(0, 700px, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.square{
+    height: 94%;
+    width: 94%;
+    background: #BB2406;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -47% 0 0 -47%;
+    border-radius: 25%;
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+.square:hover {
+    transform: rotate(90deg);
+}
+
+.square-red {
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+.square-red:hover {
+    transform: rotate(360deg);
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg); background: #591003;
+    }
+    20% {
+        background: #26361d;;
+    }
+    40% {
+        background: #182536;;
+    }
+    60% {
+        background: #BDE4F6;;
+    }
+    80% {
+        background: #fa6161;
+    }
+    100%{
+        transform: rotate(360deg); background: #611f03;
+    }
+}
+
+img {
+    margin-left: 25%;
+}
+
+img:hover {
+    -webkit-animation: rotate;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+.rotate {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transition-property: rotate;
+    transition-duration: 2s;
+}
+
+
+.rotate:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes myanimation {
+    0% {background-color: #c53612; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25% {background-color: #d6f62b; right: 300px; top: 0px; border-radius: 50% 0 0 0;}
+    50% {background-color: #d20707; left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+    75% {background-color: #edee52; right: 300px; top: 300px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: #b5251b; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}
+
+.ul {
+    list-style-type: hebrew;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+#spaceinvader {
+    box-shadow: 0 0 0 1em crimson,
+    0 1em 0 1em #F95E5E,
+    -2.5em 1.5em 0 .5em #F65555,
+    2.5em 1.5em 0 .5em #F53131,
+    -3em -3em 0 0 #E81616,
+    3em -3em 0 0 #C40F0F,
+    -2em -2em 0 0 #870505,
+    2em -2em 0 0 #973E0A,
+    -3em -1em 0 0 #AE470C,
+    -2em -1em 0 0 #CB530E,
+    2em -1em 0 0 #EC6314,
+    3em -1em 0 0 #F9772C,
+    -4em 0 0 0 #FA8846,
+    -3em 0 0 0 #F7A575,
+    3em 0 0 0 #ECC133,
+    4em 0 0 0 #DFD471,
+    -5em 1em 0 0 #F9EA5F,
+    -4em 1em 0 0 #FAE631,
+    4em 1em 0 0 #FCE40A,
+    5em 1em 0 0 #ECFC0A,
+    -5em 2em 0 0 #E6FC90,
+    5em 2em 0 0 #E3FC81,
+    -5em 3em 0 0 #D5F651,
+    -3em 3em 0 0 #D1F932,
+    3em 3em 0 0 #CBFC08,
+    5em 3em 0 0 #9FC40A,
+    -2em 4em 0 0 #75C41B,
+    -1em 4em 0 0 #8CDF2D,
+    1em 4em 0 0 #50F755,
+    2em 4em 0 0 #12FF59;
+    background: transparent;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+    margin-left: 48%;
+    margin-top: 5%;
+    animation: slideinvader 45s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideinvader {
+    0%{
+        transform: translate3d(0em, 0em, 0em);
+    }
+    20%{
+        transform: translate3d(0em, -100em, 0em);
+    }
+    40%{
+        transform: translate3d(0em, -200em, 0em);
+    }
+    60%{
+        transform: translate3d(0em, -420em, 0em);
+    }
+    80%{
+        transform: translate3d(0em, -100em, 0em);
+    }
+    100%{
+        transform: translate3d(0em, 0em, 0em);
+    }
+}
